@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/shdq/algorithms-in-js/issues"
   },
-  "homepage": "https://github.com/shdq/algorithms-in-js#readme"
+  "homepage": "https://github.com/shdq/algorithms-in-js#readme",
+  "dependencies": {
+    "jest": "^23.6.0"
+  }
 }
