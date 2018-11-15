@@ -1,0 +1,23 @@
+{
+  "name": "algorithms-in-js",
+  "version": "1.0.0",
+  "description": "Algorithms implementations in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shdq/algorithms-in-js.git"
+  },
+  "keywords": [
+    "algorithms",
+    "javascript"
+  ],
+  "author": "Sergei Cherniaev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shdq/algorithms-in-js/issues"
+  },
+  "homepage": "https://github.com/shdq/algorithms-in-js#readme"
+}
