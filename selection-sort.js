@@ -12,7 +12,7 @@ function selectionSort(array) {
         pos = i;
       }
     }
-    
+
     result.push(arr.splice(pos, 1)[0]);
   }
   return result;
