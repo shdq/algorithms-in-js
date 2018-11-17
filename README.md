@@ -1,5 +1,5 @@
 # algorithms-in-js
-Algorithms implementation in JavaScript
+Algorithms implementations in JavaScript
 
 ## Simple sorting algorithms
 
