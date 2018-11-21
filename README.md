@@ -6,3 +6,5 @@ Algorithms implementations in JavaScript
 - Bubble sort
 - Selection sort
 - Insertion sort
+### Efficient sorts
+- Quick sort
