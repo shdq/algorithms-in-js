@@ -4,6 +4,7 @@
   "description": "Algorithms implementations in JavaScript",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/eslint/bin/eslint.js *.js",
     "test": "jest"
   },
   "repository": {
@@ -22,5 +23,9 @@
   "homepage": "https://github.com/shdq/algorithms-in-js#readme",
   "dependencies": {
     "jest": "^23.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-google": "^0.11.0"
   }
 }

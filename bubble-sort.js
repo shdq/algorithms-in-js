@@ -5,7 +5,7 @@ function bubbleSort(arr) {
     let swapped = false;
     for (let i = 0; i < length; i++) {
       if (arr[i] > arr[i + 1] && (i + 1) != length) {
-        let swap = arr[i];
+        const swap = arr[i];
         arr[i] = arr[i + 1];
         arr[i + 1] = swap;
         swapped = true;
