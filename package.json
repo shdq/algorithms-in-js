@@ -4,6 +4,7 @@
   "description": "Algorithms implementations in JavaScript",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/eslint/bin/eslint.js *.js",
     "test": "jest"
   },
   "repository": {
