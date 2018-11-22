@@ -1,6 +1,6 @@
 function selectionSort(array) {
-  let arr = array;
-  let result = [];
+  const arr = array;
+  const result = [];
 
   while (arr.length > 0) {
     let pos = 0;
