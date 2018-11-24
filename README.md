@@ -8,3 +8,4 @@ Algorithms implementations in JavaScript
 - Insertion sort
 ### Efficient sorts
 - Quick sort
+– Merge sort
