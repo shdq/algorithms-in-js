@@ -1,11 +1,12 @@
 # algorithms-in-js
 Algorithms implementations in JavaScript
 
-## Simple sorting algorithms
+## Sorting algorithms
 
+### Simple sorts
 - Bubble sort
 - Selection sort
 - Insertion sort
 ### Efficient sorts
 - Quick sort
-– Merge sort
+- Merge sort
