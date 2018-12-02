@@ -10,3 +10,6 @@ Algorithms implementations in JavaScript
 ### Efficient sorts
 - Quick sort
 - Merge sort
+
+## Search algorithms
+- Binary search
