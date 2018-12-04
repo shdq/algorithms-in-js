@@ -7,6 +7,6 @@ test('returned fibonacci number for a given position', () => {
 });
 
 test('returned fibonacci number for a given position (recursive implementation)', () => {
-  expect(fib.reqFibonacci(12))
+  expect(fib.recFibonacci(12))
       .toEqual(144);
 });
