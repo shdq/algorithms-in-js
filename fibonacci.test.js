@@ -1,7 +1,12 @@
-const fibonacci = require('./fibonacci');
+const fib = require('./fibonacci');
 
 /* eslint max-len: 0 */
 test('returned fibonacci number for a given position', () => {
-  expect(fibonacci(12))
+  expect(fib.fibonacci(12))
+      .toEqual(144);
+});
+
+test('returned fibonacci number for a given position (recursive implementation)', () => {
+  expect(fib.reqFibonacci(12))
       .toEqual(144);
 });
