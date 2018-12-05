@@ -8,8 +8,11 @@ Algorithms implementations in JavaScript
 - Selection sort
 - Insertion sort
 ### Efficient sorts
-- Quick sort
-- Merge sort
+- Quick sort (recursive)
+- Merge sort (recursive)
 
 ## Search algorithms
 - Binary search
+
+## Recursive algorithms
+- Fibonacci number for n<sup>th</sup> position
