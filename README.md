@@ -15,5 +15,5 @@ Algorithms implementations in JavaScript
 - Binary search
 
 ## Recursive algorithms
-– Factorial
+- Factorial
 - Fibonacci number for n<sup>th</sup> position
