@@ -17,4 +17,4 @@ Algorithms implementations in JavaScript
 ## Recursive algorithms
 - Factorial
 - Fibonacci number for n<sup>th</sup> position
-- Greatest Common Divisor
+- Greatest common divisor
