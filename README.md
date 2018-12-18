@@ -18,3 +18,6 @@ Algorithms implementations in JavaScript
 - Factorial
 - Fibonacci number for n<sup>th</sup> position
 - Greatest common divisor
+
+## Graphs
+- Undirected graph representation (adjacency list)
