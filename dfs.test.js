@@ -14,3 +14,7 @@ g.addEdge(1, 7);
 test('return spanning tree for the given graph', () => {
   expect(dfs(g)).toEqual([1, 2, 3, 4, 5, 6, 7]);
 });
+
+test('return spanning tree started with particular vertex', () => {
+  expect(dfs(g, 5)).toEqual([5, 3, 2, 1, 6, 7, 4]);
+});
