@@ -1,4 +1,4 @@
-function dfs(graph) {
+function dfs(graph, vertex = 1) {
   const spanningTree = [];
   const discovered = [];
   for (let i = 1; i <= graph.size; i++) discovered.push(false);
@@ -13,7 +13,7 @@ function dfs(graph) {
     }
   }
 
-  doDFS(1);
+  doDFS(vertex);
 
   return spanningTree;
 }
