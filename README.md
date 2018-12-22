@@ -22,3 +22,4 @@ Algorithms implementations in JavaScript
 ## Graphs
 - Undirected graph representation (adjacency list)
 - Deep-first search
+- Breadth-first search
