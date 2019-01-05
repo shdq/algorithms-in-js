@@ -22,7 +22,6 @@ Algorithms implementations in JavaScript
 ## Graphs
 - Undirected graph representation (adjacency list)
 - Deep-first search
-- Breadth-first search
 
 ## Project Euler
 - Problem 1: Multiples of 3 and 5
