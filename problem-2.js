@@ -9,7 +9,7 @@ function fibonacci(n = 1000000) {
 }
 
 function fiboSum(sequence) {
-  return sequence;
+  return sequence.filter(value => value % 2 === 0).reduce((sum, val) => sum + val);
 }
 
 module.exports = { fibonacci, fiboSum };
