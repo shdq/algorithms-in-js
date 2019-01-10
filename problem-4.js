@@ -1,14 +1,14 @@
 function isPalindrome(n) {
   let number = n;
-  let turned = 0;
+  let reversed = 0;
   while (n > 10) {
-    turned += (n % 10);
-    turned *= 10;
+    reversed += (n % 10);
+    reversed *= 10;
     n = Math.floor(n / 10);
   }
-  turned += n;
+  reversed += n;
 
-  if (number === turned) return true;
+  if (number === reversed) return true;
   return false;
 }
 
