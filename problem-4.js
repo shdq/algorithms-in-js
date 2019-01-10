@@ -12,6 +12,16 @@ function isPalindrome(n) {
   return false;
 }
 
-// console.log(isPalindrome(9095901));
+function largestPalindrome() {
+  let largest = 0;
+  for (let i = 999; i >= 100; i--) {
+    for (let j = 999; j >= i; j--) {
+      if (isPalindrome(i * j) && i * j > largest) {
+        largest = i * j;
+      }
+    }
+  }
+  return largest;
+}
 
-module.exports = { isPalindrome };
+module.exports = { isPalindrome, largestPalindrome };
