@@ -1,5 +1,5 @@
 function isPalindrome(n) {
-  let number = n;
+  const number = n;
   let reversed = 0;
   while (n > 10) {
     reversed += (n % 10);

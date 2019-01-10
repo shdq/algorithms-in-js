@@ -9,6 +9,7 @@ function fibonacci(n = 1000000) {
 }
 
 function fiboSum(sequence) {
+  /* eslint max-len: 0 */
   return sequence.filter(value => value % 2 === 0).reduce((sum, val) => sum + val);
 }
 

@@ -13,4 +13,4 @@ function fibonacci(n) {
   return sequence[sequence.length - 1];
 }
 
-module.exports = {fibonacci, recFibonacci};
+module.exports = { fibonacci, recFibonacci };
