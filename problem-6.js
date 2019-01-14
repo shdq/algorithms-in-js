@@ -1,14 +1,20 @@
 function sumSquare(n) {
-  let result = 0;
-  result += n * n;
-  if (n > 1) return (result += sumSquare(n - 1));
-  return result;
+  let sum = 0;
+  sum += n * n;
+  if (n > 1) return (sum += sumSquare(n - 1));
+  return sum;
+}
+
+function squareSum(n) {
+  let sum = 0;
+  for (let i = n; i >= 1; i--) {
+    sum += i;
+  }
+  return sum * sum;
 }
 
 function sqrDiff(n) {
-  return n;
+  return squareSum(n) - sumSquare(n);
 }
 
-console.log(sumSquare(10));
-
-module.exports = { sumSquare, sqrDiff };
+module.exports = { sumSquare, squareSum, sqrDiff };
