@@ -8,7 +8,13 @@ function isPrime(n) {
 }
 
 function nthPrime(n) {
-  return n;
+  let count = 0;
+  for (let i = 1; ; i++) {
+    if (isPrime(i)) {
+      count++;
+    }
+    if (count === n) return i;
+  }
 }
 
 module.exports = { isPrime, nthPrime };
