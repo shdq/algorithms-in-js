@@ -30,3 +30,4 @@ Algorithms implementations in JavaScript
 - Problem 4: Largest palindrome product
 - Problem 5: Smallest multiple
 - Problem 6: Sum square difference
+- Problem 7: 10001st prime
