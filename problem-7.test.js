@@ -20,8 +20,14 @@ test("checks number is prime or not", () => {
   expect(problem.isPrime(6)).toBe(false);
 });
 test("checks number is prime or not", () => {
+  expect(problem.isPrime(9)).toBe(false);
+});
+test("checks number is prime or not", () => {
   expect(problem.isPrime(11)).toBe(true);
 });
 test("checks number is prime or not", () => {
   expect(problem.isPrime(13)).toBe(true);
+});
+test("return Nth prime number", () => {
+  expect(problem.nthPrime(100)).toBe(541);
 });
