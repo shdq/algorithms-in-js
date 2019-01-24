@@ -33,3 +33,4 @@ Algorithms implementations in JavaScript
 - Problem 7: 10001st prime
 - Problem 8: Largest product in a series
 - Problem 9: Special Pythagorean triplet
+- Problem 10: Summation of primes
