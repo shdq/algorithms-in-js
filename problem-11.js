@@ -33,7 +33,7 @@ class Matrix {
 
     for (let i = 0; i < this.height; i++) {
       for (let j = 0; j < this.width; j++) {
-        this.data[i * this.width + j] = arr[i * this.width + j];
+        this.data[i * this.width + j] = Number(arr[i * this.width + j]);
       }
     }
   }
