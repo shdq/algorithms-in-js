@@ -21,11 +21,21 @@ const DATA =
   "01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48 ";
 
 class Matrix {
-  constructor(width = 5, height = 5) {
+  constructor(width, height) {
     this.name = "Matrix";
     this.width = width;
     this.height = height;
     this.data = [];
+  }
+
+  fill(string) {
+    const arr = string.split(" ");
+
+    for (let i = 0; i < this.height; i++) {
+      for (let j = 0; j < this.width; j++) {
+        this.data[i * this.width + j] = arr[i * this.width + j];
+      }
+    }
   }
 }
 
