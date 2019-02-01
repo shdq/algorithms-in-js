@@ -39,10 +39,13 @@ class Matrix {
   }
 
   get(i, j) {
-    if (i > this.height - 1 || j > this.width - 1)
+    if (i > this.height - 1 || j > this.width - 1) {
       throw new Error(`Dimension of matrix is ${this.height}x${this.width}`);
+    }
     return this.data[i * this.width + j];
   }
+
+  product() {}
 }
 
 module.exports = Matrix;
