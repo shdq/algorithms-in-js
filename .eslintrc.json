@@ -8,7 +8,8 @@
       "require-jsdoc": 0,
       "object-curly-spacing": ["error", "always"],
       "arrow-parens": ["error", "as-needed"],
-      "indent": ["error", 2]
+      "indent": ["error", 2],
+      "quotes": [2, "double", { "avoidEscape": true }]
   },
   "extends": "google"
 }
