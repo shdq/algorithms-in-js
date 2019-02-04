@@ -12,4 +12,19 @@ function factors(n) {
   return factors.length;
 }
 
+/*
+  TODO: time optimization needed,
+  impossible to get triangular number with >500 factors to solve the problem;
+*/
+function highestTriangular(numFactors) {
+  let n = 1;
+  let number = 1;
+  while (factors(number) <= numFactors) {
+    number = triangularNum(n++);
+  }
+  return number;
+}
+
+console.log(highestTriangular(200));
+
 module.exports = { triangularNum, factors, highestTriangular };
