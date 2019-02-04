@@ -1,8 +1,5 @@
 function triangularNum(n) {
-  if (n > 1) {
-    return n + triangularNum(n - 1);
-  }
-  return 1;
+  return (n * (n + 1)) / 2;
 }
 
 function factors(n) {
@@ -15,4 +12,4 @@ function factors(n) {
   return factors.length;
 }
 
-module.exports = { triangularNum, factors };
+module.exports = { triangularNum, factors, highestTriangular };
