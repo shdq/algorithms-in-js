@@ -1,4 +1,4 @@
-const { triangularNum, factors } = require("./problem-12");
+const { triangularNum, factors, highestTriangular } = require("./problem-12");
 
 describe("Tests for problem 12: Highly divisible triangular number", () => {
   /* eslint max-len: 0 */
@@ -8,5 +8,9 @@ describe("Tests for problem 12: Highly divisible triangular number", () => {
 
   test("returns amount of factors of a given number", () => {
     expect(factors(21)).toBe(4);
+  });
+
+  test("returns the first highest triangular number to have over a given number of divisors", () => {
+    expect(highestTriangular(5)).toBe(28);
   });
 });
