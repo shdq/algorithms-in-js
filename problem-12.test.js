@@ -13,4 +13,8 @@ describe("Tests for problem 12: Highly divisible triangular number", () => {
   test("returns the first highest triangular number to have over a given number of divisors", () => {
     expect(highestTriangular(5)).toBe(28);
   });
+
+  test("the same as previous but for higher number of divisors", () => {
+    expect(highestTriangular(500)).toBe(76576500);
+  });
 });
