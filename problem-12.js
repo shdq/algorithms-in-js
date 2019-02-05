@@ -4,18 +4,18 @@ function triangularNum(n) {
 
 function factors(n) {
   const factors = [1];
-  for (let i = 2; i <= n; i++) {
+  for (let i = 2; i <= Math.sqrt(n); i++) {
     if (n % i === 0) {
       factors.push(i);
+      if (i !== n / i) {
+        factors.push(n / i);
+      }
     }
   }
+  factors.push(n);
   return factors.length;
 }
 
-/*
-  TODO: time optimization needed,
-  impossible to get triangular number with >500 factors to solve the problem;
-*/
 function highestTriangular(numFactors) {
   let n = 1;
   let number = 1;
@@ -24,7 +24,5 @@ function highestTriangular(numFactors) {
   }
   return number;
 }
-
-console.log(highestTriangular(200));
 
 module.exports = { triangularNum, factors, highestTriangular };
