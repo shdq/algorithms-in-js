@@ -1,12 +1,12 @@
-const Graph = require('./graph');
+const Graph = require("./graph");
 
-test('returns new graph with 5 vertices', () => {
+test("returns new graph with 5 vertices", () => {
   const g = new Graph(5);
-  expect(g.name).toBe('Graph');
+  expect(g.name).toBe("Graph");
   expect(g.size).toBe(5);
 });
 
-test('returns a map of adjacency lists for each vertex', () => {
+test("returns a map of adjacency lists for each vertex", () => {
   const g = new Graph(5);
   g.addEdge(1, 2);
   g.addEdge(2, 3);
@@ -25,7 +25,7 @@ test('returns a map of adjacency lists for each vertex', () => {
   expect(g.adjList).toEqual(expected);
 });
 
-test('no dublicate edges in returned graph', () => {
+test("no dublicate edges in returned graph", () => {
   const g = new Graph(3);
   g.addEdge(1, 2);
   g.addEdge(2, 3);

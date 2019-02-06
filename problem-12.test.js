@@ -16,7 +16,7 @@ describe("Tests for problem 12: Highly divisible triangular number", () => {
 
   /*
     Next test tooks a lot of time, but the function itself executes much faster.
-    What's wrong with you, Jest? 
+    What's wrong with you, Jest?
   */
 
   // test("the same as previous but for higher number of divisors", () => {

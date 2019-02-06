@@ -37,7 +37,7 @@ function largestProduct(grid) {
   let product = 0;
   for (let i = 0; i < grid.height; i++) {
     for (let j = 0; j < grid.width; j++) {
-      //right
+      // right
       product = Math.max(
         product,
         grid.get(i, j) *
@@ -45,7 +45,7 @@ function largestProduct(grid) {
           (grid.get(i, j + 2) || 1) *
           (grid.get(i, j + 3) || 1)
       );
-      //left
+      // left
       product = Math.max(
         product,
         grid.get(i, j) *
@@ -53,7 +53,7 @@ function largestProduct(grid) {
           (grid.get(i, j - 2) || 1) *
           (grid.get(i, j - 3) || 1)
       );
-      //top
+      // top
       product = Math.max(
         product,
         grid.get(i, j) *
@@ -61,7 +61,7 @@ function largestProduct(grid) {
           (grid.get(i - 2, j) || 1) *
           (grid.get(i - 3, j) || 1)
       );
-      //bottom
+      // bottom
       product = Math.max(
         product,
         grid.get(i, j) *
