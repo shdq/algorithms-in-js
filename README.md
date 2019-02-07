@@ -36,3 +36,4 @@ Algorithms implementations in JavaScript
 - Problem 10: Summation of primes
 - Problem 11: Largest product in a grid
 - Problem 12: Highly divisible triangular number
+- Problem 13: Large sum
