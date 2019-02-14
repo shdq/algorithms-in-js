@@ -1,17 +1,24 @@
-function largeSum(n) {
-  const arr = n.split("\n");
+function largeSum(numbers, nDigits = 10) {
+  const arr = numbers.split("\n");
   let result = 0;
-  let size;
-  arr[0].length < 10 ? (size = arr[0].length - 1) : (size = 10);
-  let i = 0;
-  while (i <= size) {
-    const rowSum = arr.reduce((sum, val) => sum + Number(val[i]), 0);
-    const exp = size - i;
-    result += rowSum * Math.pow(10, exp);
-    i++;
+
+  let numLength;
+  arr[0].length < nDigits
+    ? (numLength = arr[0].length - 1)
+    : (numLength = nDigits);
+
+  for (let i = 0; i <= numLength; i++) {
+    const columnSum = arr.reduce((sum, val) => sum + parseInt(val[i]), 0);
+    const exp = numLength - i;
+    result += columnSum * Math.pow(10, exp);
   }
-  const str = result.toString();
-  if (str.length > 10) return Number(str.slice(0, 10));
+
+  // round result to first N digits
+  const resultLength = Math.ceil(Math.log10(result + 1));
+  if (resultLength > nDigits) {
+    return Math.floor(result / Math.pow(10, resultLength - nDigits));
+  }
+
   return result;
 }
 
