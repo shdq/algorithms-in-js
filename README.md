@@ -38,3 +38,4 @@ Algorithms implementations in JavaScript
 - Problem 12: Highly divisible triangular number
 - Problem 13: Large sum
 - Problem 14: Longest Collatz sequence
+- Problem 15: Lattice paths
