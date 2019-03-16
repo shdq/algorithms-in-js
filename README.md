@@ -39,3 +39,4 @@ Algorithms implementations in JavaScript
 - Problem 13: Large sum
 - Problem 14: Longest Collatz sequence
 - Problem 15: Lattice paths
+- Problem 16: Power digit sum
