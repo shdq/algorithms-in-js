@@ -1,29 +1,37 @@
 # algorithms-in-js
+
 Algorithms implementations in JavaScript
 
 ## Sorting algorithms
 
 ### Simple sorts
+
 - Bubble sort
 - Selection sort
 - Insertion sort
+
 ### Efficient sorts
+
 - Quick sort (recursive)
 - Merge sort (recursive)
 
 ## Search algorithms
+
 - Binary search
 
 ## Recursive algorithms
+
 - Factorial
 - Fibonacci number for n<sup>th</sup> position
 - Greatest common divisor
 
 ## Graphs
+
 - Undirected graph representation (adjacency list)
 - Deep-first search
 
 ## Project Euler
+
 - Problem 1: Multiples of 3 and 5
 - Problem 2: Even Fibonacci numbers
 - Problem 3: Largest prime factor
@@ -40,3 +48,4 @@ Algorithms implementations in JavaScript
 - Problem 14: Longest Collatz sequence
 - Problem 15: Lattice paths
 - Problem 16: Power digit sum
+- Problem 17: Number letter counts
