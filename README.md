@@ -49,3 +49,4 @@ Algorithms implementations in JavaScript
 - Problem 15: Lattice paths
 - Problem 16: Power digit sum
 - Problem 17: Number letter counts
+- Problem 18: Maximum path sum I
