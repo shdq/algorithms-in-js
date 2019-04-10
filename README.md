@@ -51,3 +51,4 @@ Algorithms implementations in JavaScript
 - Problem 17: Number letter counts
 - Problem 18: Maximum path sum I
 - Problem 19: Counting Sundays
+- Problem 20: Factorial digit sum
