@@ -13,6 +13,11 @@
       "pre-commit": "./node_modules/eslint/bin/eslint.js *.js && jest"
     }
   },
+  "babel": {
+    "plugins": [
+      "@babel/plugin-syntax-bigint"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shdq/algorithms-in-js.git"
@@ -33,6 +38,10 @@
     "jest": "^24.7.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-syntax-bigint": "^7.4.3",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-env": "^1.7.0",
     "eslint": "^5.16.0",
     "eslint-config-google": "^0.12.0"
   }

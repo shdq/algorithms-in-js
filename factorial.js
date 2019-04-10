@@ -5,8 +5,8 @@ function factorial(n) {
 /* eslint new-cap: 0 */
 function factorialBigInt(n) {
   n = BigInt(n);
-  if (n <= BigInt(1)) return BigInt(1);
-  return n * factorialBigInt(n - BigInt(1));
+  if (n <= 1n) return 1n;
+  return n * factorialBigInt(n - 1n);
 }
 
 module.exports = { factorial, factorialBigInt };
