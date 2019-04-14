@@ -6,4 +6,11 @@ function divisorsSum(n) {
   return sum;
 }
 
-module.exports = { divisorsSum };
+function amicable(n) {
+  const sumA = divisorsSum(n);
+  const sumB = divisorsSum(sumA);
+  if (sumB === n) return sumA;
+  return false;
+}
+
+module.exports = { divisorsSum, amicable };

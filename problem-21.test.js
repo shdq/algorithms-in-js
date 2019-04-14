@@ -13,5 +13,4 @@ describe("Tests for problem 21: Amicable numbers", () => {
   test("returns false is there is no amicable number a given number", () => {
     expect(amicable(500)).toBe(false);
   });
-
 });
