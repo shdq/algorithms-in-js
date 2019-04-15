@@ -9,8 +9,19 @@ function divisorsSum(n) {
 function amicable(n) {
   const sumA = divisorsSum(n);
   const sumB = divisorsSum(sumA);
-  if (sumB === n) return sumA;
+  if (n === sumB && n !== sumA) return sumA;
   return false;
 }
 
-module.exports = { divisorsSum, amicable };
+function amicableSum(n) {
+  const arr = [];
+  for (let i = n; i > 0; i--) {
+    if (!arr.includes(i)) {
+      const number = amicable(i);
+      if (number !== false) arr.push(i, number);
+    }
+  }
+  return arr.reduce((acc, val) => acc + val);
+}
+
+module.exports = { divisorsSum, amicable, amicableSum };
