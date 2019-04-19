@@ -6,4 +6,16 @@ function alphaValue(word) {
   });
 }
 
-module.exports = { alphaValue };
+function totalScore(names) {
+  const arr = names
+    .replace(/"/g, "")
+    .split(",")
+    .sort((a, b) => (a < b ? -1 : 1));
+  let total = 0;
+  arr.forEach((name, index) => {
+    total += alphaValue(name) * (index + 1);
+  });
+  return total;
+}
+
+module.exports = { alphaValue, totalScore };
