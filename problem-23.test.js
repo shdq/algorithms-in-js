@@ -1,4 +1,4 @@
-const { isAbundant } = require("./problem-23");
+const { isAbundant, sumOfInt } = require("./problem-23");
 
 describe("Tests for problem 23: Non-abundant sums", () => {
   /* eslint max-len: 0 */
@@ -12,5 +12,9 @@ describe("Tests for problem 23: Non-abundant sums", () => {
 
   test("checks number for abundance", () => {
     expect(isAbundant(42)).toBe(true);
+  });
+
+  test("returns the sum of all the positive integers which cannot be written as the sum of two abundant numbers", () => {
+    expect(sumOfInt()).toBe(4179871);
   });
 });
