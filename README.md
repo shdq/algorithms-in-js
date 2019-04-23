@@ -54,3 +54,4 @@ Algorithms implementations in JavaScript
 - Problem 20: Factorial digit sum
 - Problem 21: Amicable numbers
 - Problem 22: Names scores
+- Problem 23: Non-abundant sums
