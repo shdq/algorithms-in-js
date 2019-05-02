@@ -57,3 +57,4 @@ Algorithms implementations in JavaScript
 - Problem 23: Non-abundant sums
 - Problem 24: Lexicographic permutations
 - Problem 25: 1000-digit Fibonacci number
+- Problem 26: Reciprocal cycles
