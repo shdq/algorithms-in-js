@@ -17,4 +17,18 @@ function getNumOfDigits(n) {
   return false;
 }
 
-module.exports = { getNumOfDigits };
+function maxDigits(n = 10) {
+  let max = 0;
+  let value = 0;
+  for (let i = n; i > 1; i--) {
+    const digits = getNumOfDigits(i);
+    if (digits > max) {
+      max = digits;
+      value = i;
+    }
+  }
+  // console.log(max);
+  return value;
+}
+
+module.exports = { getNumOfDigits, maxDigits };
