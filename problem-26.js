@@ -1,6 +1,28 @@
+function repeatingDecimal(n) {
+  let result = "0.";
+  let num = 10;
+
+  while (true) {
+    if (num % n === num) {
+      result += "0";
+      num *= 10;
+    }
+
+    if (num % n < num) {
+      result += Math.floor(num / n).toString();
+      num -= n * Math.floor(num / n);
+      num *= 10;
+    }
+
+    if (num % n === 0) return false;
+    if (result.length > 2000) break;
+  }
+  return result;
+}
+
 function getNumOfDigits(n) {
-  const expResult = 1 / n;
-  const str = expResult.toString().split(".")[1];
+  const str = repeatingDecimal(n);
+  if (!str) return false;
 
   for (let digits = 1; digits < str.length; digits++) {
     let testStr = str;
@@ -14,10 +36,9 @@ function getNumOfDigits(n) {
       }
     }
   }
-  return false;
 }
 
-function maxDigits(n = 10) {
+function maxDigits(n = 1000) {
   let max = 0;
   let value = 0;
   for (let i = n; i > 1; i--) {
@@ -27,8 +48,7 @@ function maxDigits(n = 10) {
       value = i;
     }
   }
-  // console.log(max);
   return value;
 }
 
-module.exports = { getNumOfDigits, maxDigits };
+module.exports = { repeatingDecimal, getNumOfDigits, maxDigits };
