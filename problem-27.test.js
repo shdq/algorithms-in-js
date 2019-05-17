@@ -6,7 +6,7 @@ describe("Tests for problem 27: Quadratic primes", () => {
     expect(countPrimes(-79, 1601)).toBe(80);
   });
 
-  test("empty function returns undefined", () => {
-    expect(getProduct()).toBe(undefined);
+  test("returns product of coefficients in the quadratics formula, that generates maximum number of consecutive primes", () => {
+    expect(getProduct()).toBe(-59231);
   });
 });
