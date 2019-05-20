@@ -59,3 +59,4 @@ Algorithms implementations in JavaScript
 - Problem 25: 1000-digit Fibonacci number
 - Problem 26: Reciprocal cycles
 - Problem 27: Quadratic primes
+- Problem 28: Number spiral diagonals
