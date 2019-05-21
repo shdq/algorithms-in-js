@@ -60,3 +60,4 @@ Algorithms implementations in JavaScript
 - Problem 26: Reciprocal cycles
 - Problem 27: Quadratic primes
 - Problem 28: Number spiral diagonals
+- Problem 29: Distinct powers
