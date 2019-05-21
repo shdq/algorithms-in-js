@@ -6,4 +6,15 @@ function bigIntPow(base, exp) {
   return result;
 }
 
-module.exports = { bigIntPow };
+function distinctPow(limit) {
+  const sequence = new Set();
+  for (let i = 2; i <= limit; i++) {
+    for (let j = 2; j <= limit; j++) {
+      /* eslint new-cap: 0 */
+      sequence.add(bigIntPow(BigInt(i), j));
+    }
+  }
+  return sequence.size;
+}
+
+module.exports = { bigIntPow, distinctPow };
