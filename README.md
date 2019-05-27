@@ -61,3 +61,4 @@ Algorithms implementations in JavaScript
 - Problem 27: Quadratic primes
 - Problem 28: Number spiral diagonals
 - Problem 29: Distinct powers
+- Problem 30: Digit fifth powers
