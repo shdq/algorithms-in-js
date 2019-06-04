@@ -67,6 +67,6 @@ Algorithms implementations in JavaScript
 - Problem 30: Digit fifth powers
 - Problem 31: Coin sums
 - Problem 32: Pandigital products
-- Problem 33: Digit cancelling fractions
+- Problem 33: Digit canceling fractions
 
 </details>
