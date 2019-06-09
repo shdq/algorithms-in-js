@@ -21,33 +21,48 @@ function findFractions() {
       if (
         f.i / gcd(f.i, f.j) === n / gcd(n, d) &&
         f.j / gcd(f.i, f.j) === d / gcd(n, d)
-      )
-        result.push({ n, d });
+      ) {
+        result.push([n, d]);
+      }
 
       d = f.j * 10 + k;
       if (
         f.i / gcd(f.i, f.j) === n / gcd(n, d) &&
         f.j / gcd(f.i, f.j) === d / gcd(n, d)
-      )
-        result.push({ n, d });
+      ) {
+        result.push([n, d]);
+      }
 
       n = f.i * 10 + k;
       if (
         f.i / gcd(f.i, f.j) === n / gcd(n, d) &&
         f.j / gcd(f.i, f.j) === d / gcd(n, d)
-      )
-        result.push({ n, d });
+      ) {
+        result.push([n, d]);
+      }
 
       d = k * 10 + f.j;
       if (
         f.i / gcd(f.i, f.j) === n / gcd(n, d) &&
         f.j / gcd(f.i, f.j) === d / gcd(n, d)
-      )
+      ) {
         result.push([n, d]);
+      }
     }
   });
 
-  return result.length;
+  return result;
 }
 
-module.exports = { findFractions };
+function productOfFractions() {
+  const f = findFractions();
+  const result = f[0];
+  for (let i = 1; i < f.length; i++) {
+    result[0] *= f[i][0];
+    result[1] *= f[i][1];
+  }
+
+  return result[1] / gcd(result[0], result[1]);
+}
+
+module.exports = { findFractions, productOfFractions };
