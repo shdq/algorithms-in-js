@@ -33,7 +33,7 @@ Algorithms implementations in JavaScript
 ## Project Euler
 
 <details>
-  <summary>Expand problems (1-32)</summary>
+  <summary>Expand problems (1-33)</summary>
 
 - Problem 1: Multiples of 3 and 5
 - Problem 2: Even Fibonacci numbers
@@ -67,5 +67,6 @@ Algorithms implementations in JavaScript
 - Problem 30: Digit fifth powers
 - Problem 31: Coin sums
 - Problem 32: Pandigital products
+- Problem 33: Digit canceling fractions
 
 </details>
