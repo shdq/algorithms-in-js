@@ -8,4 +8,18 @@ function serializeFactorials() {
   return array;
 }
 
-module.exports = { serializeFactorials };
+function solution() {
+  const FACTORIALS = serializeFactorials();
+  const curiousDigits = [];
+  for (let i = 2540160; i > 2; i--) {
+    const sum = i
+      .toString()
+      .split("")
+      .map((val, index, array) => (array[index] = FACTORIALS[val]))
+      .reduce((acc, cur) => acc + cur);
+    if (i === sum) curiousDigits.push(i);
+  }
+  return curiousDigits.reduce((acc, cur) => acc + cur);
+}
+
+module.exports = { serializeFactorials, solution };
