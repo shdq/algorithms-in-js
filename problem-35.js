@@ -14,4 +14,20 @@ function generatePrimes(limit = 100) {
   return primes;
 }
 
-module.exports = { rotate, generatePrimes };
+function circularPrimes(limit = 1000000) {
+  const PRIMES = generatePrimes(limit);
+  const result = [];
+  for (const prime of PRIMES) {
+    let isCircular = true;
+    let number = prime;
+    while (isCircular) {
+      number = rotate(number.toString());
+      if (number === prime.toString()) break;
+      if (!isPrime(Number(number))) isCircular = false;
+    }
+    if (isCircular) result.push(prime);
+  }
+  return result.length;
+}
+
+module.exports = { rotate, generatePrimes, circularPrimes };
