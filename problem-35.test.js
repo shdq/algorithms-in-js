@@ -8,5 +8,6 @@ describe("Tests for the problem 35: Circular primes", () => {
   });
   test("returns primes up to a given limit", () => {
     expect(generatePrimes(100).length).toBe(25);
+    expect(generatePrimes(100)[20]).toBe(73);
   });
 });
