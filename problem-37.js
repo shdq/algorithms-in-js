@@ -15,4 +15,12 @@ function isTruncatable(n) {
   return true;
 }
 
-module.exports = { isTruncatable };
+function solution() {
+  let sum = 0;
+  for (let i = 23; i < 800000; i += 2) {
+    if (isTruncatable(i)) sum += i;
+  }
+  return sum;
+}
+
+module.exports = { isTruncatable, solution };
