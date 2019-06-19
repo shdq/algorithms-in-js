@@ -30,6 +30,10 @@ Algorithms implementations in JavaScript
 - Undirected graph representation (adjacency list)
 - Deep-first search
 
+## Primes
+
+- Sieve of Eratosthenes
+
 ## Project Euler
 
 <details>
