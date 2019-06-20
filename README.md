@@ -37,7 +37,7 @@ Algorithms implementations in JavaScript
 ## Project Euler
 
 <details>
-  <summary>Expand problems (1-37)</summary>
+  <summary>Expand problems (1-38)</summary>
 
 - Problem 1: Multiples of 3 and 5
 - Problem 2: Even Fibonacci numbers
@@ -76,5 +76,6 @@ Algorithms implementations in JavaScript
 - Problem 35: Circular primes
 - Problem 36: Double-base palindromes
 - Problem 37: Truncatable primes
+- Problem 38: Pandigital multiples
 
 </details>
