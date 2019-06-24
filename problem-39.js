@@ -8,4 +8,18 @@ function sides(perimeter) {
   return solutions;
 }
 
-module.exports = { sides };
+function maxPerimeter(p = 1000) {
+  let max = 0;
+  let result = 0;
+  while (p > 2) {
+    const numSolutions = sides(p);
+    if (numSolutions > max) {
+      max = numSolutions;
+      result = p;
+    }
+    p--;
+  }
+  return result;
+}
+
+module.exports = { sides, maxPerimeter };
