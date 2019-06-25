@@ -78,5 +78,6 @@ Algorithms implementations in JavaScript
 - Problem 37: Truncatable primes
 - Problem 38: Pandigital multiples
 - Problem 39: Integer right triangles
+- Problem 40: Champernowne's constant
 
 </details>
