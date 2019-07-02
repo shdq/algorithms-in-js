@@ -1,25 +1,42 @@
-const { nextPermutation } = require("./problem-24");
-
-function hasProperty(seq) {
-  const str = seq.join("");
-  if (Number(str[1] + str[2] + str[3]) % 2 !== 0) return false;
-  if (Number(str[2] + str[3] + str[4]) % 3 !== 0) return false;
-  if (Number(str[3] + str[4] + str[5]) % 5 !== 0) return false;
-  if (Number(str[4] + str[5] + str[6]) % 7 !== 0) return false;
-  if (Number(str[5] + str[6] + str[7]) % 11 !== 0) return false;
-  if (Number(str[6] + str[7] + str[8]) % 13 !== 0) return false;
-  if (Number(str[7] + str[8] + str[9]) % 17 !== 0) return false;
-  return true;
+function multiplesOf(num) {
+  const result = [];
+  for (let i = 999; i >= 100; i--) {
+    if (i % num === 0 && new Set(i.toString().split("")).size === 3) {
+      result.push(i.toString());
+    }
+  }
+  for (let i = 99; i >= 10; i--) {
+    const str = "0" + i.toString();
+    if (i % num === 0 && new Set(str.split("")).size === 3) {
+      result.push(str);
+    }
+  }
+  return result;
 }
 
-function solution() {
-  let seq = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-  let sum = 0;
-  while (seq) {
-    if (hasProperty(seq)) sum += Number(seq.join(""));
-    seq = nextPermutation(seq);
+const m17 = multiplesOf(17);
+
+function solution(candidates = m17, primes = [1, 2, 3, 5, 7, 11, 13]) {
+  if (candidates[0].length === 10) {
+    return candidates.reduce((acc, cur) => acc + Number(cur), 0);
   }
-  return sum;
+  let str = candidates.pop();
+  const prime = primes.pop();
+  const result = [];
+  while (str) {
+    const arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].filter(
+      el => str.indexOf(el) < 0
+    );
+
+    for (const el of arr) {
+      if (Number(el.toString() + str.slice(0, 2)) % prime === 0) {
+        result.push(el.toString() + str);
+      }
+    }
+
+    str = candidates.pop();
+  }
+  return solution(result, primes);
 }
 
 module.exports = solution;
