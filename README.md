@@ -37,7 +37,7 @@ Algorithms implementations in JavaScript
 ## Project Euler
 
 <details>
-  <summary>Expand problems (1-44)</summary>
+  <summary>Expand problems (1-45)</summary>
 
 - Problem 1: Multiples of 3 and 5
 - Problem 2: Even Fibonacci numbers
@@ -83,5 +83,6 @@ Algorithms implementations in JavaScript
 - Problem 42: Coded triangle numbers
 - Problem 43: Sub-string divisibility
 - Problem 44: Pentagon numbers
+- Problem 45: Triangular, pentagonal, and hexagonal
 
 </details>
