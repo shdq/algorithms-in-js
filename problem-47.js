@@ -10,4 +10,19 @@ function numOfPrimeFactors(n, primes) {
   return factors.size;
 }
 
-module.exports = { numOfPrimeFactors };
+function solution(primes) {
+  let i = 2 * 3 * 5 * 7;
+  let cons = 0;
+  while (true) {
+    if (cons === 4) return i - 4;
+    if (numOfPrimeFactors(i, primes) === 4) {
+      cons++;
+      i++;
+      continue;
+    }
+    cons = 0;
+    i++;
+  }
+}
+
+module.exports = { numOfPrimeFactors, solution };
