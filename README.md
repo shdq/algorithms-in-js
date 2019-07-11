@@ -37,7 +37,7 @@ Algorithms implementations in JavaScript
 ## Project Euler
 
 <details>
-  <summary>Expand problems (1-47)</summary>
+  <summary>Expand problems (1-48)</summary>
 
 - Problem 1: Multiples of 3 and 5
 - Problem 2: Even Fibonacci numbers
@@ -86,5 +86,6 @@ Algorithms implementations in JavaScript
 - Problem 45: Triangular, pentagonal, and hexagonal
 - Problem 46: Goldbach's other conjecture
 - Problem 47: Distinct primes factors
+- Problem 48: Self powers
 
 </details>
