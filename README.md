@@ -34,6 +34,10 @@ Algorithms implementations in JavaScript
 
 - Sieve of Eratosthenes
 
+## Permutations
+
+- Heap's algorithm
+
 ## Project Euler
 
 <details>
