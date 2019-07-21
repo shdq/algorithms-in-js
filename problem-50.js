@@ -2,7 +2,8 @@ const sieve = require("./sieve");
 
 function consPrimeSum(limit) {
   const primes = sieve(limit);
-  const max = [];
+  let result = 0;
+  let amount = 0;
   for (let i = primes.length - 1; i >= 1; i--) {
     for (let j = 0; j < i; j++) {
       let sum = 0;
@@ -10,16 +11,16 @@ function consPrimeSum(limit) {
       while (true) {
         sum += primes[k];
         if (sum > primes[i]) break;
-        if (sum === primes[i]) {
-          max.push({ amount: k - j, sum: primes[i] });
+        if (sum === primes[i] && amount < k-j) {
+          result = sum;
+          amount = k - j;
           break;
         }
         k++;
       }
     }
   }
-  return max.reduce((prev, next) => (prev.amount > next.amount ? prev : next))
-    .sum;
+  return result;
 }
 
 module.exports = { consPrimeSum };
