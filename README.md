@@ -29,6 +29,7 @@ Algorithms implementations in JavaScript
 
 - Undirected graph representation (adjacency list)
 - Deep-first search
+- Breadth-first search
 
 ## Primes
 
