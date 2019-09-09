@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/shdq/algorithms-in-js#readme",
   "dependencies": {
+    "acorn": "^6.3.0",
     "jest": "^23.6.0"
   },
   "devDependencies": {
