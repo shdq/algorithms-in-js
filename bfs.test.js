@@ -12,9 +12,9 @@ g.addEdge(1, 6);
 g.addEdge(1, 7);
 
 test("return spanning tree for a given graph", () => {
-  expect(bfs(g)).toEqual([1, 2, 3, 4, 5, 6, 7]);
+  expect(bfs(g)).toEqual([1, 2, 6, 7, 3, 4, 5]);
 });
 
 test("return spanning tree started with particular vertex", () => {
-  expect(bfs(g, 5)).toEqual([5, 3, 2, 1, 6, 7, 4]);
+  expect(bfs(g, 5)).toEqual([5, 3, 4, 2, 1, 6, 7]);
 });
