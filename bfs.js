@@ -9,11 +9,9 @@ function bfs(graph, vertex = 1) {
 
   while (queue.length > 0) {
     const currentVertex = queue.shift();
-
     const adjList = graph.adjList.get(currentVertex);
-    console.log(adjList);
 
-    for (let neighbour of adjList) {
+    for (const neighbour of adjList) {
       if (!discovered[neighbour]) {
         discovered[neighbour] = true;
         spanningTree.push(neighbour);
