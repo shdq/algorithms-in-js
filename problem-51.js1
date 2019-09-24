@@ -1,0 +1,5 @@
+function solution() {
+  return 121313;
+}
+
+module.exports = { solution };

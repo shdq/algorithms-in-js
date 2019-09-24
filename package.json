@@ -33,14 +33,9 @@
   },
   "homepage": "https://github.com/shdq/algorithms-in-js#readme",
   "dependencies": {
-<<<<<<< HEAD
-    "acorn": "^6.2.0",
     "husky": "^1.3.1",
-    "jest": "^24.8.0"
-=======
     "acorn": "^6.3.0",
     "jest": "^23.6.0"
->>>>>>> a1bb7b1... vulnerabilities fixed
   },
   "devDependencies": {
     "@babel/core": "^7.5.4",
